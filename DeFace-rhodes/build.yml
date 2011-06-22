@@ -1,0 +1,27 @@
+--- 
+name: DeFace-rhodes
+extensions: 
+- json
+- another-extension
+bbver: 4.6
+wp: 
+  productid: 4a2690c0-70f1-012e-0a67-12313900de37
+sdk: /Users/brian/work/rhodes
+android: 
+  emulator: ""
+build: debug
+applog: rholog.txt
+version: 1.0
+wmsdk: Windows Mobile 6 Professional SDK (ARMV4I)
+sdkversion: 3.0.1
+vendor: rhomobile
+iphone: 
+  provisionprofile: 
+  BundleURLScheme: deface_rhodes
+  BundleIdentifier: com.rhomobile.deface_rhodes
+  sdk: iphonesimulator4.2
+  codesignidentity: 
+  entitlements: 
+  configuration: Debug
+capabilities:
+- camera

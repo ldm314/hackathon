@@ -1,0 +1,24 @@
+<div id="pageTitle">
+		<h1>Edit <%= @picture.image_data%></h1>
+</div>
+
+<div id="toolbar">
+    <%= link_to "Back", :action => :show, :id => @picture.object %>
+    <%= link_to "Delete", :action => :delete, :id => @picture.object %>
+</div>
+
+
+<div id="content">
+    <form method="POST" action="<%= url_for :action => :update %>">
+    	<input type="hidden" name="id" value="<%= @picture.object %>"/>
+            <table>
+        		
+                    <tr>
+            			<td class="itemLabel">Image data: </td>
+              			<td class="itemValue"><input type="text" name="picture[image_data]" value="<%= @picture.image_data %>"/></td>
+          		    </tr>
+        		
+            </table>
+            <input type="submit" class="standardButton" value="Update" />
+    </form>
+</div>

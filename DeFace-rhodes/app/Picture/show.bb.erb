@@ -1,0 +1,21 @@
+<div id="pageTitle">
+	<h1><%= @picture.image_data%></h1>
+</div>
+
+<div id="toolbar">
+        <%= link_to "Back", :action => :index %>
+        <%= link_to "Edit", :action => :edit, :id => @picture.object %>
+</div>
+
+
+<div id="content">
+
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">ImageData</td>
+        <td class="itemValue"><%= @picture.image_data%></td>
+      </tr>
+      
+    </table>
+</div>

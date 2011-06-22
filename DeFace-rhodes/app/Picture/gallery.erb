@@ -1,0 +1,7 @@
+<div>
+    <% @pictures.each do |picture| %>
+    
+        <a href="<%= url_for :action => :show_image, :id => picture.object %>">
+        <img src="<%= picture.uri %>" width="90" height ="90" border='0' /></a>
+    <% end %>
+</div>

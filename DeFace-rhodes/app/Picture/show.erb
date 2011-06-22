@@ -1,0 +1,23 @@
+<div class="pageTitle">
+  <h1><%= @picture.image_data %></h1>
+</div>
+
+<div class="toolbar">
+  <div class="leftItem backButton">
+    <a href="<%= url_for :action => :index %>">Back</a>
+  </div>
+  <div class="rightItem regularButton">
+    <a href="<%= url_for :action => :edit, :id => @picture.object %>">Edit</a>
+  </div>
+</div>
+
+<div class="content">
+  <ul>
+    
+        <li>
+          <div class="itemLabel">ImageData</div>
+          <div class="itemValue"><%= @picture.image_data %></div>
+        </li>
+    
+  </ul>
+</div>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>DefaceRhodes</title>
+
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>        
+	<script src="/public/js/editor.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<!--img id="canvasSource" src="/public/images/bike.jpg" onload="reload();" style="display:none"/-->
+	
+	<input type="button" onclick="javascript:reload();" style="font-size:15px;" value="Revert" />
+	<input type="button" onclick="javascript:saveImage();" style="font-size:15px;" value="Save" /><input type="button" onclick="javascript:getPage('/app/Picture/delete');" style="font-size:15px;" value="Delete" /><br/><br/>
+	<input type="button" onclick="javascript:greyScale();" style="font-size:15px;" value="Greyscale" />
+	<input type="button" onclick="javascript:invert();" style="font-size:15px;" value="Invert" />
+	<input type="button" onclick="javascript:swirl();" style="font-size:15px;" value="Swirl" />
+	<input type="button" onclick="javascript:wave();" style="font-size:15px;" value="Wave" />
+	<input type="button" onclick="javascript:freshpaint();" style="font-size:15px;" value="Fresh Paint" />
+	
+  <div id="container">
+    <canvas id="area" width="944" height="766">
+      Sorry, your browser is not supported.
+    </canvas>		
+  </div>
+</body>
+
+</html>
